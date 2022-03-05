@@ -1,0 +1,70 @@
+void main() {
+  print      ("--------------------------------------");
+  print      ("[             [Marksheet]            ]");
+  print      ("--------------------------------------");
+  var name = ("Mohsin Ali");
+  var father = ("Zafar Ali");
+  var standard = ("Matriculation");
+  print ("Student Name    :     ${name}");
+  print ("Father Name     :     ${father}");
+  print ("Class           :     ${standard}");
+  print ("----------------------------------------------------------");
+  print ("[S.No:    Subject        Passing Marks     Obtained Marks]");
+  print ("----------------------------------------------------------");
+  num maths = 70;
+  print ("1.        Mathematics         33                ${maths}");
+  
+  num english = 80;
+  print ("2.        English             33                ${english}");
+  
+  num urdu = 80;
+  print ("3.        Urdu                33                ${urdu}");
+  
+  num sindhi = 80;
+  print ("4.        Sindhi              33                ${sindhi}");
+  
+  num sociology = 70;
+  print ("5.        Sociology           33                ${sociology}");
+  
+  print ("----------------------------------------------------------");
+  var obtained_marks = (maths+english+urdu+sindhi+sociology);
+  print ("Obtained Marks                                 [${obtained_marks}]");
+  print ("----------------------------------------------------------");
+//   print      ("--------------------------------------");
+  print      ("              [Summary]             ");
+  print      ("--------------------------------------");
+  var total_marks = 500;
+  print ("Total Marks     :     ${total_marks}");
+  var marks = 380;
+  print ("Obtained Marks  :     ${marks}");
+  var percentage = obtained_marks/total_marks*100;
+  print ("Percentage      :     ${percentage}");
+  if (percentage >= 80){
+    print ("Grade             :     A1");
+    print      ("--------------------------------------");
+  } else {
+    if (percentage >= 70){
+      print ("Grade           :     A");
+      print      ("--------------------------------------");
+    } else {
+    if (percentage >= 50){
+      print ("Grade           :     B");
+      print      ("--------------------------------------");
+  } else {
+    if (percentage >= 40){
+      print ("Grade           :     C");
+      print      ("--------------------------------------");
+    }else{
+      if (percentage <30){
+        print ("Fail");
+        print      ("--------------------------------------");
+      }
+    }
+  }
+    }
+  
+    }
+  print ("-------------------------------------------------");
+  print ("------------[Best Of Luck For Future]------------");
+  print ("-------------------------------------------------");
+}
